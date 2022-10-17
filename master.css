@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(202, 202, 202);
+}
+.container {
+    position: relative;
+    width: 600px;
+    height: 350px;
+    background-color: rgb(23, 27, 34);
+    border-radius: 100px 80px 250px 100px;
+    box-shadow: 0 0 30px rgba(0, 19, 112, 0.416);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: border-r 10s infinite ease-in-out;
+}
+.container .c {
+    margin-top: -100px;
+}
+.container .c h3 {
+    color: rgb(0, 179, 255);
+    font-size: 25px;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 132, 255, 0.129);
+}
+.container .c input[type = "button"] {
+    position:absolute;
+    margin-top: 30px;
+    margin-left: 10px;
+    width: 80px;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 7px;
+}
+.container .c .no {
+    left: 330px;
+    color: red;
+    background-color: hsla(0, 100%, 50%, 0.096);
+
+}
+.container .c .no:hover {
+    background-color: rgba(255, 0, 0, 0.181);
+
+}
+
+.container .c .yes {
+    color: rgb(0, 255, 51);
+    background-color: rgba(0, 255, 51, 0.075);
+}
+.container .c .yes:hover {
+    background-color: rgba(0, 255, 51, 0.159);
+
+}
+.fa-heart {
+    z-index: -1;
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 0px;
+    font-size: 0px;
+    color: rgb(211, 0, 0);
+    animation: heart 1s infinite ;
+}
+@keyframes border-r {
+    0% {
+        border-radius: 160px 80px 250px 100px;
+    }
+    50% {
+        border-radius: 60px 230px 50px 170px;
+    }
+    100% {
+        border-radius: 160px 80px 250px 100px;
+    }
+    
+}
+@keyframes heart {
+    0% {
+        font-size: 100px;
+    }
+    50% {
+        font-size: 110px;
+
+    }
+    100% {
+        font-size: 100px;
+
+    }
+    
+}
