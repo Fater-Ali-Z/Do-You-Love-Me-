@@ -46,32 +46,39 @@ body {
     cursor: pointer;
     border-radius: 7px;
 }
-.container .c .no {
+.container .c .no,
+.container .c .no2 {
     left: 330px;
     color: red;
     background-color: hsla(0, 100%, 50%, 0.096);
 
 }
-.container .c .no:hover {
+.container .c .no2{
+    display: none;
+}
+.container .c .no:hover,
+.container .c .no2:hover {
     background-color: rgba(255, 0, 0, 0.181);
-
 }
 
-.container .c .yes {
+.container .c .yes,
+.container .c .yes2 {
     color: rgb(0, 255, 51);
     background-color: rgba(0, 255, 51, 0.075);
 }
-.container .c .yes:hover {
+.container .c .yes:hover,
+.container .c .yes2:hover {
     background-color: rgba(0, 255, 51, 0.159);
 
 }
 .fa-heart {
     z-index: -1;
     position: absolute;
-    margin-top: 80px;
+    margin-top: 120px;
     margin-left: 0px;
     font-size: 0px;
-    color: rgb(211, 0, 0);
+    color: rgb(40, 255, 40);
+    text-shadow: 0 0 20px rgba(0, 255, 51, 0.908);
     animation: heart 1s infinite ;
 }
 @keyframes border-r {
