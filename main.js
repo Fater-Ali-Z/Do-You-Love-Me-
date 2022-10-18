@@ -38,7 +38,7 @@ yes.onclick = function () {
   yes2.value = "اي";
   yes2.style = `transform:translate(-40px, 0);
                 font-family: cairo;
-                font-size:16px;
+                font-family: 'Cairo', sans-serif;
              `;
   yes.style.display = "none";
 };
@@ -49,7 +49,7 @@ yes2.onclick = function () {
               padding: 10px 20px;
               border-radius:10px;
               transition:1s;
-              font-family: cairo;
+              font-family: 'Cairo', sans-serif;
               `;
   h.style.zIndex = "5";
   no.style.display = "none";
